@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table id="calcu">
+        <tr>
+            <td colspan="3">
+                <input type="text" id="result">
+            </td>
+            <td><input type="button" class ="clear" placeholder="C" onclick="clearScreen()" value="c"></td>
+
+        </tr>
+  
+        <tr>
+            <td><input type="button" class = "button" onclick ="calculate('1')" value="1"></td>
+            <td><input type="button" class = "button" onclick ="calculate('2')" value="2"></td>
+            <td><input type="button" class = "button" onclick ="calculate('3')"value="3"></td>
+            <td><input type="button" class = "button" onclick ="calculate('/')"value="/"></td>
+        </tr>
+        <tr>
+            <td><input type="button"class = "button"  onclick ="calculate('4')"value="4"></td>
+            <td><input type="button" class = "button" onclick ="calculate('5')" value="5"></td>
+            <td><input type="button" class = "button" onclick ="calculate('6')"value="6"></td>
+            <td><input type="button" class = "button" onclick ="calculate('*')"value="*"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class = "button" onclick ="calculate(7)"value="7"></td>
+            <td><input type="button" class = "button" onclick ="calculate('8')"value="8"></td>
+            <td><input type="button" class = "button" onclick ="calculate('9')"value="9"></td>
+            <td><input type="button" class = "button" onclick ="calculate('-')"value="-"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class = "button" onclick ="calculate('0')"value="0"></td>
+            <td><input type="button" class = "button" onclick ="calculate('.')"value="."></td>
+            <td><input type="button" class = "button" placeholder="=" onclick ="evaluateResult()" value="="></td>
+            <td><input type="button" class = "button" onclick ="calculate('+')"value="+"></td>
+        </tr>
+        <script src="index.js"></script>
+    </table>
+    
+    
+</body>
+</html>
